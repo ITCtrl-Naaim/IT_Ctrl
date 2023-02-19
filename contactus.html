@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/CSS/contactus.css" />
+    <!-- Icons -->
+    <link rel="icon" href="assets/img/ITCtrl_logo.png" />
+    <script
+      src="https://kit.fontawesome.com/5d26c89e24.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ITCTRL</title>
+  </head>
+  <body>
+    <header>
+      <!-- Nav -->
+      <nav class="navbar fixed-top navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/img/ITCtrl_logo.png"
+              class="me-1"
+              alt="Logo"
+              width="30"
+              height="30" /><img
+              src="assets/img/ITCtrl.png"
+              alt="Logo"
+              width="80"
+              height="20"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- navbar toggler icon -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse m-3" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  ><i class="fa-solid fa-house me-2"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="services.html"
+                  ><i class="fa-solid fa-server me-2"></i>Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="aboutus.html"
+                  ><i class="fa-solid fa-briefcase me-2"></i>About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contactus.html"
+                  ><i class="fa-solid fa-address-card me-2"></i>Contact Us</a
+                >
+              </li>
+              <li class="nav-item dropdown language">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-globe me-1"></i>
+                  Language
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="contactus.html">English</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="ArabicFile/contactusar.html"
+                      >Arabic</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item sign-up">
+                <a class="nav-link active" href="#"
+                  ><i class="fa-regular fa-user me-2"></i>Sign Up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contact Us -->
+    <div class="image">
+      <div class="image-overlay">
+        <div
+          class="position-relative start-50 top-50 translate-middle register bg-white p-5"
+        >
+          <h1 class="text-center">Send Us A Message</h1>
+          <!-- Form -->
+          <div class="position-absolute end-0 me-3 mt-5" id="form">
+            <div class="position-relative">
+              <span class="alert-inputN"
+                >Please fill the field<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <span class="alert-input-name"
+                >Name must be more than 3 characters<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <input
+                type="text"
+                id="name"
+                class="name"
+                name="name"
+                placeholder="Name"
+              />
+            </div>
+            <div class="position-relative alert-input">
+              <span class="alert-inputE"
+                >Email is required: ex@abc.xyz<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <span id="alert-input-email" class="alert-input-email"
+                >This is not an email: ex@abc.xyz<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <input
+                type="email"
+                id="email"
+                class="email"
+                name="e-mail"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="position-relative">
+              <span class="alert-inputS"
+                >Please fill the subject<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <span class="alert-input-subject"
+                >Subject must be more than 3 characters<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <input
+                type="text"
+                id="subject"
+                class="subject"
+                name="message_subject"
+                placeholder="Subject"
+              />
+            </div>
+            <div class="position-relative">
+              <span class="alert-inputM"
+                >Message is required<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <span class="alert-input-message"
+                >Message must be more than 20 characters<i
+                  class="fa-solid fa-circle-exclamation ms-1"
+                ></i
+              ></span>
+              <textarea
+                type="text"
+                id="message"
+                class="message"
+                name="message"
+                placeholder="Message"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="button" class="send" id="send">Send</button>
+          </div>
+          <div
+            class="alert alert-success position-absolute top-50 start-50 translate-middle"
+            role="alert"
+          >
+            <h3>Successfully done!</h3>
+            <p>
+              Thank you. We have received your message and will reply to you
+              within 24 hours.
+            </p>
+            <a href="contactus.html" class="btn btn-success">OK</a>
+          </div>
+          <!-- Contact Info -->
+          <div class="contactinfo text-white position-absolute mt-5 p-5">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i>Istanbul, 3400, Turkey</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              help.it.ctrl@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i>+90 552 574 29 93</p>
+            <p><i class="fas fa-print me-3"></i>+90 552 574 29 93</p>
+            <div class="social-media">
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-light"
+      style="background-color: #243340"
+    >
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+      <!-- Section: Links  -->
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Row -->
+          <div class="row mt-3">
+            <!-- Column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>ITCTRL
+              </h6>
+              <p>
+                ITCTRL Company has many modern products that help you study,
+                play and work at the same time, which will make you enjoy using
+                them.
+              </p>
+            </div>
+            <!-- Column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="services.html#vr" class="text-reset"
+                  >Virtual Reality</a
+                >
+              </p>
+              <p>
+                <a href="services.html#gaming_pc" class="text-reset"
+                  >Computer</a
+                >
+              </p>
+              <p>
+                <a href="services.html#xbox" class="text-reset">Xbox</a>
+              </p>
+              <p>
+                <a href="services.html#ps" class="text-reset">PS</a>
+              </p>
+            </div>
+            <!-- Column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i>Istanbul, 3400, Turkey</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                help.it.ctrl@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i>+90 552 574 29 93</p>
+              <p><i class="fas fa-print me-3"></i>+90 552 574 29 93</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <div class="text-center p-4 border-top">© 2021 Copyright: IT_CTRL</div>
+    </footer>
+    <!-- Footer -->
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript & Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/JS/contactus.js"></script>
+  </body>
+</html>

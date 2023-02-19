@@ -1,0 +1,105 @@
+/* Google Font = 'Roboto Slab', serif */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+header {
+  position: relative;
+}
+
+.navbar {
+  padding: 0;
+  min-height: 3.5rem;
+  box-shadow: 0 1px 8px 0 #2433407e;
+}
+
+.navbar-brand {
+  margin-left: 35px;
+}
+
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  margin: auto 50px;
+  left: 160px;
+  height: 2rem;
+  width: 0.2rem;
+  background-color: #243340;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+  color: #243340;
+}
+
+.navbar-nav a:hover {
+  font-weight: bold;
+}
+
+.language {
+  position: absolute;
+  right: 125px;
+}
+
+.sign-up {
+  position: absolute;
+  right: 30px;
+}
+
+.navbar-toggler {
+  background-color: #243340;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 1.5rem;
+  height: 0.05rem;
+  background-color: #fff;
+  margin-left: -0.2rem;
+}
+
+.navbar-toggler span + span {
+  width: 1.1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.navbar-toggler span + span + span {
+  width: 0.8rem;
+  margin-left: -0.2rem;
+}
+
+/* Section: img */
+section img{
+  box-shadow: 0 1px 8px 0 #2433406b;
+}
+
+/* Section: PC Or Lap */
+.section-pcorlap {
+  margin-top: 6.5rem;
+}
+
+/* Section: xbox, gamingpc, graphicpc, studypc, vr, ps, xbox */
+.section-xbox,
+.section-gamingpc,
+.section-graphicpc,
+.section-vr,
+.section-ps,
+.section-studypc {
+  margin: 4.5rem 0;
+}
+/* Footer */
+footer a:hover {
+  text-decoration: underline;
+}

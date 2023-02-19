@@ -1,0 +1,235 @@
+/* Google Font = 'Roboto Slab', serif */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+header {
+  position: relative;
+}
+
+.navbar {
+  padding: 0;
+  min-height: 3.5rem;
+  box-shadow: 0 1px 8px 0 #24334094;
+}
+
+.navbar-brand {
+  margin-left: 35px;
+}
+
+.navbar-brand::after {
+  content: "";
+  position: absolute;
+  margin: auto 50px;
+  left: 160px;
+  height: 2rem;
+  width: 0.2rem;
+  background-color: #243340;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+  color: #243340;
+}
+
+.navbar-nav a:hover {
+  font-weight: bold;
+}
+
+.language {
+  position: absolute;
+  right: 250px;
+  width: 1px;
+}
+
+.sign-up {
+  position: absolute;
+  right: 30px;
+}
+
+.navbar-toggler {
+  background-color: #243340;
+  outline: none;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.navbar-toggler span {
+  display: block;
+  width: 1.5rem;
+  height: 0.05rem;
+  background-color: #fff;
+  margin-left: -0.2rem;
+}
+
+.navbar-toggler span + span {
+  width: 1.1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.navbar-toggler span + span + span {
+  width: 0.8rem;
+  margin-left: -0.2rem;
+}
+
+/* Section1 (main photo) */
+.section1-photo1 {
+  /* width: 100%; */
+  background-image: url(../img/Highlight-Hero-Windows11-GlobalLaunch_VP4-1399x600.jpg);
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  top: 3.5rem;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .section1-photo1 {
+    background-position: center;
+  }
+}
+
+.paragraph-one {
+  width: 400px;
+  position: absolute;
+  top: 200px;
+  left: 10%;
+}
+
+.section1 p.p-1 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.section1 p.p-2 {
+  color: white;
+  font-size: 20px;
+}
+
+section .more-info {
+  background-color: white;
+  color: #243340;
+}
+
+.btn:hover {
+  background-color: #243340;
+  color: white;
+}
+
+/* Section2 (Computers&Laptops) */
+.section2-header h1 {
+  margin: 7rem 0 1rem 1rem;
+}
+
+.section2-a1,
+.section2-a2 {
+  position: relative;
+}
+
+.section2-a1-img2,
+.section2-a2-img2 {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+
+.section2-a1-img1:hover,
+.section2-a2-img1:hover {
+  box-shadow: 0 1px 8px 0 #24334094;
+}
+
+/* Section3 (swiper) */
+.section3-header h1 {
+  margin: 7rem 0 1rem 2rem;
+  text-transform: capitalize;
+}
+
+.swiper {
+  height: 30rem;
+}
+
+.swiper-slide {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  transition: all 1s ease;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.03);
+}
+
+.swiper-slide:not(:first-child):hover {
+  box-shadow: 0 1px 8px 0 #24334094;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ====================================================== EDITED ======================================================== */
+/* .swiper-slide-content p {
+  text-align: center;
+  float: left;
+  margin: 0 1rem;
+}
+
+.swiper-slide-content {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  font-size: 5rem;
+  text-align: center;
+} */
+
+/* .card {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+}
+
+
+/* .cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card-carousel {
+  margin: 0 1rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  border: none;
+  overflow: hidden;
+}
+
+.card-carousel img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  transition: all 1.5s ease;
+}
+
+.card-carousel:hover img {
+  transform: scale(1.1);
+}
+
+.card-carousel:hover {
+  box-shadow: 0 8px 12px 0 #243340;
+} */
